@@ -55,6 +55,11 @@
                     <skipSubPackageValidation>true</skipSubPackageValidation>
                     <embeddeds>
                         <embedded>
+                            <groupId>org.apache.sling</groupId>
+                            <artifactId>org.apache.sling.dynamic-include</artifactId>
+                            <target>/apps/geeky-packages/content/install</target>
+                        </embedded>
+                        <embedded>
                             <groupId>com.geeky</groupId>
                             <artifactId>geeky.ui.apps</artifactId>
                             <type>zip</type>
@@ -196,6 +201,10 @@
             <version>${project.version}</version>
             <type>zip</type>
         </dependency>
-
+        <!-- Sling dynamic include -->
+        <dependency>
+            <groupId>org.apache.sling</groupId>
+            <artifactId>org.apache.sling.dynamic-include</artifactId>
+        </dependency>
     </dependencies>
 </project>
